@@ -3,6 +3,7 @@ var xmlhttp = new XMLHttpRequest();
 
 var url = "https://reaktiiv.com/projects.json";
 xmlhttp.open("GET", url, true);
+xmlhttp.setRequestHeader('Access-Control-Allow-Origin', '*');
 xmlhttp.send();
 xmlhttp.onreadystatechange = function () {
   if(this.readyState == 4 && this.status == 200) {
