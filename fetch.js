@@ -1,7 +1,7 @@
 $(function () {
   $.ajax({
     type: "GET",
-    url: "https://reaktiiv.com/projects.json",
+    url: "https://praktika.reaktiiv.ee/projects.json",
     mimetype: "json",
     crossDomain: "true",
     success: function (data) {
